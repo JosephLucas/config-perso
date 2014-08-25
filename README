@@ -1,0 +1,12 @@
+By default vim check the correct spelling of names for .txt and .tex files.
+This feauture may be annoying.
+
+To deactivate this : set nospell
+To reactivate it : set spell
+
+TODO:
+-----
+when editing python files, after switching between NerdTree and the window with
+python file, when coming back to the python file, vim starts from the first
+line... I would like to record the location of the last edition
+Same with latex files.
