@@ -1,3 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/pierre/Documents/professionnel/pierre/ALTIE/dossiers/2014/2014-04-14_alrenGazo/logiciel/commandeGazo/src/admin/Commun'

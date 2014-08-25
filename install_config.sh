@@ -1,15 +1,23 @@
 #! /bin/sh
 
-ln -s vim/vimrc ~/.vimrc
-mkdir ~/.vim/
-ln -s vim/config/ ~/.vim/
-mkdir ~/.vim/bundle
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-wget https://www.languagetool.org/download/LanguageTool-2.5.zip
-mkdir ~/.vim/progExt
-unzip LanguageTool-2.5.zip
-mv LanguageTool-2.5/ ~/.vim/progExt/
-rm -rf LanguageTool-2.5.zip
+startingDir=${PWD}
+
+#delete old configuration files
+rm ${HOME}/.vimrc
+rm -rf ${HOME}/.vim
+#create symlinks to the configuration files
+ln -s ${PWD}/.vimrc ${HOME}/.vimrc
+ln -s ${PWD}/.vim ${HOME}/.vim
+#install the softawre that manages the plugins for vim
+mkdir ${HOME}/.vim/bundle
+git clone https://github.com/gmarik/Vundle.vim.git ${HOME}/.vim/bundle/Vundle.vim
+#install language assistance
+mkdir ${HOME}/.vim/progExt
+wget https://www.languagetool.org/download/LanguageTool-2.6.zip
+unzip LanguageTool-2.6.zip
+mv LanguageTool-2.6 ${HOME}/.vim/progExt/
+rm -r LanguageTool-2.6.zip
+
 vim +PluginInstall +qall
 
-ln -s zsh/zshrc ~/.zshrc
+cd ${startingDir}

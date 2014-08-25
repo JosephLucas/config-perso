@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/etc'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_3='/media'
+let g:netrw_dirhist_4='/media/jlucas'
+let g:netrw_dirhist_5='/media/jlucas/Depot_Jo'
+let g:netrw_dirhist_6='/media/jlucas/Depot_Jo/backup_02062014'
+let g:netrw_dirhist_7='/etc'
