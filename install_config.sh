@@ -8,7 +8,7 @@ rm -rf ${HOME}/.vim
 #create symlinks to the configuration files
 ln -s ${PWD}/.vimrc ${HOME}/.vimrc
 ln -s ${PWD}/.vim ${HOME}/.vim
-#install the softawre that manages the plugins for vim
+#install the software that manages the plugins for vim
 mkdir ${HOME}/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim.git ${HOME}/.vim/bundle/Vundle.vim
 #install language assistance

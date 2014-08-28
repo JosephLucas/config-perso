@@ -199,7 +199,9 @@ function! Flatex()
 endfunction
 
 " Python-mode
-au BufEnter,BufNewFile *.py exe Fpython()
+" BufRead executes only once Fpython function avoiding to loose the current
+" line when using <C-W>w or <C-W>{h,j,k,l} ... to switch among windows
+au BufRead,BufNewFile *.py exe Fpython()
 function! Fpython()
 	  source ~/.vim/config/python.vim
 endfunction
@@ -208,3 +210,6 @@ endfunction
 augroup Shebang
   autocmd BufNewFile *.py 0put =\"#!/usr/bin/python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
 augroup END
+
+" Automatically focus on the main file (not the NERDTree)
+au VimEnter * wincmd l
