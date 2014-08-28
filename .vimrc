@@ -44,7 +44,7 @@ call vundle#end()
 """"""""""""""""""""""""
 " Configuration de vim "
 """"""""""""""""""""""""
-" Automatic relading of .vimrc
+" Automatic reading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
 " Encoding
@@ -59,7 +59,7 @@ set clipboard=unnamed
 set mouse=a
 set bs=2
 
-" Complétition  commande vim
+" Complétion  commande vim
 set wildmenu
 set wildmode=full
 
@@ -103,7 +103,7 @@ vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
 " Show whitespace
-" MUST be inserted BEFOR the colorscheme command
+" MUST be inserted BEFORE the colorscheme command
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
@@ -118,7 +118,7 @@ filetype off
 filetype plugin indent on
 syntax on
 
-" Showing line numbers and lenght
+" Showing line numbers and length
 set number	" show line numbers
 set cursorline  " highlight line
 set tw=79	" width of document (used by gd)
@@ -135,7 +135,7 @@ nmap Q gqap
 set history=700
 set undolevels=700
 
-" Real programers don't use TABs but spaces
+" Real programmers don't use TABs but spaces
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -158,7 +158,7 @@ set noswapfile
 set scrolloff=1
 set nostartofline
 
-" Set 2 line downstare of the file
+" Set 2 line at the bottom of the file
 set scrolloff=2
 
 " Remember of the last edition
@@ -188,7 +188,7 @@ imap ,z <esc>z=
 "map <Leader>z ]z
 "map <Leader>Z [z
 " Grammaire : LanguageTool
-let g:languagetool_jar='$HOME/.vim/progExt/LanguageTool-2.5/languagetool-commandline.jar'
+let g:languagetool_jar='$HOME/.vim/progExt/LanguageTool-2.6/languagetool-commandline.jar'
 
 " Latex
 let g:tex_flavor='latex'
