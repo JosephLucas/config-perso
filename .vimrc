@@ -140,7 +140,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set shiftround
-set expandtab
+"To insert space characters whenever the tab key is pressed
+"set expandtab
 
 " Make search case insensitive
 set hlsearch
