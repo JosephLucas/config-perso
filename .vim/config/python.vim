@@ -20,6 +20,12 @@ inoremap ,cl class :<CR>""" <++> """<CR>def __init__(self<++>):<CR><tab><++><esc
 inoremap ,def def (self<++>):<CR><++><esc>k^f(i
 " création du main
 inoremap ,ma <esc>0iif __name__ == "__main__":<CR><tab>
+" print logErr
+inoremap ,pe print >> sys.stderr, <++><esc>^i
+" print logStd
+inoremap ,ps print >> sys.stdout, <++><esc>^i
+" raw_input
+inoremap ,ri raw_input("<++>")<esc>^i
 
 map <Leader>g :call RopeGotoDefinition()<CR>
 let ropevim_enable_shortcuts = 1
