@@ -29,6 +29,7 @@ let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_builtin_objs =0
 let g:pymode_syntax_builtin_funcs = 0
+let g:pep8_ignore="E501,W601"
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT <C-c>
 
 " Better navigation through omnicomplete option list
