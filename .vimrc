@@ -183,7 +183,8 @@ set spellsuggest=5
 autocmd BufEnter *.tex set spell
 autocmd BufEnter *.txt set spell
 map <F5> :set nospell<Cr>
-map <F6> :setlocal spell spelllang=fr,en<Cr>
+map <F6> :setlocal spell spelllang=fr<Cr>
+map <F7> :setlocal spell spelllang=en<Cr>
 imap ,z <esc>z=
 "map <Leader>zc z=
 "map <Leader>z ]z
